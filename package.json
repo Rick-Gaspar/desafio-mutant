@@ -1,0 +1,20 @@
+{
+  "name": "desafio-mutant",
+  "version": "1.0.0",
+  "description": "Desafio Mutant - automação com Playwright + TypeScript usando o Sauce demo como ref",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:edge": "playwright test --grep @edge",
+    "test:interrupcao": "playwright test --grep @interrupcao",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
