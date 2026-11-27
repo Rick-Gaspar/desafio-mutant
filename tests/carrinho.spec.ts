@@ -26,7 +26,7 @@ test.describe('Cenário 3 — Adição de produto ao carrinho', () => {
     await expect(itens.getByTestId('item-quantity')).toHaveText('1');
   });
 
-  test('Edge caseadicionar dois produtos no carrinho @edge', async ({ page }) => {
+  test('Edge case adicionar dois produtos no carrinho @edge', async ({ page }) => {
     await page.getByTestId('add-to-cart-sauce-labs-backpack').click();
     await page.getByTestId('add-to-cart-sauce-labs-bike-light').click();
     await expect(page.getByTestId('shopping-cart-badge')).toHaveText('2');
